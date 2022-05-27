@@ -1,4 +1,4 @@
-var scale = 20;
+var scale = 10;
 
 function draw(array) {
     var canvas = document.getElementById('canvas');
