@@ -3,7 +3,7 @@ var scale = 5;
     const scaleURL = urlParams.get('scale');
     console.log(urlParams)
     console.log(scaleURL)
-    if (scaleURL) {taille = parseInt(scaleURL)}
+    if (scaleURL) {scale = parseInt(scaleURL)}
 
 function draw(array) {
     var canvas = document.getElementById('canvas');
