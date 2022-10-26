@@ -1,11 +1,10 @@
 var scale = 10;
-const queryString = window.location.search;
-const urlParams = new URLSearchParams(queryString);
-const size = urlParams.get('size')
+const urlParams = new URLSearchParams(window.location.search);
+const size = urlParams.get('size');
 console.log(queryString)
 console.log(urlParams)
 console.log(size)
-if (size) {scale = size}
+if (size) {scale = parseInt(size)}
 
 function draw(array) {
     var canvas = document.getElementById('canvas');
