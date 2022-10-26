@@ -101,7 +101,7 @@ function generation(array) {
         }
 
         if (impasse == false) {
-            console.log("test")
+            //console.log("test")
             impasse = false;
         }
 
