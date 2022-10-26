@@ -1,7 +1,6 @@
 var scale = 10;
 const urlParams = new URLSearchParams(window.location.search);
 const size = urlParams.get('size');
-console.log(queryString)
 console.log(urlParams)
 console.log(size)
 if (size) {scale = parseInt(size)}
