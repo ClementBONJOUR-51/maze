@@ -2,6 +2,9 @@ var scale = 10;
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const size = urlParams.get('size')
+console.log(queryString)
+console.log(urlParams)
+console.log(size)
 if (size) {scale = size}
 
 function draw(array) {
