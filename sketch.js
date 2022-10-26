@@ -1,4 +1,9 @@
 var scale = 5;
+    const urlParams = new URLSearchParams(window.location.search);
+    const scaleURL = urlParams.get('scale');
+    console.log(urlParams)
+    console.log(scaleURL)
+    if (scaleURL) {taille = parseInt(scaleURL)}
 
 function draw(array) {
     var canvas = document.getElementById('canvas');
