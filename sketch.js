@@ -1,9 +1,4 @@
-var scale = 10;
-const urlParams = new URLSearchParams(window.location.search);
-const size = urlParams.get('size');
-console.log(urlParams)
-console.log(size)
-if (size) {scale = parseInt(size)}
+var scale = 5;
 
 function draw(array) {
     var canvas = document.getElementById('canvas');
@@ -124,6 +119,11 @@ function main() {
 
     lab = [];
     var taille = 50;
+    const urlParams = new URLSearchParams(window.location.search);
+    const size = urlParams.get('size');
+    console.log(urlParams)
+    console.log(size)
+    if (size) {taille = parseInt(size)}
     for (let y = 0; y < taille; y++) {
         const ligne = [];
         for (let x = 0; x < taille; x++) {
