@@ -22,7 +22,7 @@ function draw(array) {
             } else if (array[keyX][keyY].fin == true) {
                 ctx.fillStyle = 'rgb(255, 0, 0)';
             } else if (array[keyX][keyY].impasse == true) {
-                ctx.fillStyle = 'rgb(255, 215, 0)';
+                ctx.fillStyle = 'rgb(0, 0, 0)';
             } else {
                 ctx.fillStyle = 'rgb(255, 255, 255)';
             }
